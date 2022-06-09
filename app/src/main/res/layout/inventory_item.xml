@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/inventoryLayout">
+    <TextView
+        android:id="@+id/order"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:text=" #"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/productName"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="6"
+        android:text=" Mặt hàng"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/price"
+        android:textColor="@color/black"
+        android:layout_weight="3"
+        android:text=" Giá"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <EditText
+        android:background="@android:color/transparent"
+        android:paddingRight="10dp"
+        android:id="@+id/amount"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:gravity="end"
+        android:layout_weight="4"
+        android:text="0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

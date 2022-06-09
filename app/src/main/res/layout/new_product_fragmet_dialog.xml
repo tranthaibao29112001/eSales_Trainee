@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:paddingVertical="5dp"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:drawableLeft="@drawable/ic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Chọn mặt hàng"/>
+    <TextView
+        android:textSize="16dp"
+        android:id="@+id/searchLabel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Tìm kiếm"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/searchEditTxt"
+        android:layout_below="@id/searchLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm theo mã và diễn giải có dấu"/>
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:weightSum="14"
+        android:layout_below="@id/searchEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text=" #"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="6"
+            android:text=" Mặt hàng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:text=" Giá"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="4"
+            android:text=" Số lượng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/titleLayout"
+        android:id="@+id/inventoryRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

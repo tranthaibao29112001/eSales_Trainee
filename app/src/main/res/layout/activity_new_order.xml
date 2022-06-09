@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewOrderActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/newOrderToolbar"
+        app:title="Mua Hàng"
+        app:titleTextColor="@color/white"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/orderInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newOrderToolbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text=" Thông tin đơn hàng"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/orderTypeTxt"
+        android:layout_below="@id/orderInfoTxt"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text=" Kiểu đơn hàng"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderInfoTxt"
+        android:layout_toRightOf="@id/orderTypeTxt"
+        android:text="*"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderInfoTxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/orderTypeTxt"
+        android:text=" Thành Tiền"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/orderNameTxt"
+        android:layout_below="@id/orderTypeTxt"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"
+        android:text=" Đơn đặt hàng"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderTypeTxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/orderTypeTxt"
+        android:text=" 0"
+        android:textColor="@color/red"
+        android:textSize="18dp" />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/orderNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/remarkLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderNameTxt"
+        android:layout_marginTop="5dp"
+        android:text=" Ghi chú"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remarkLabel"
+        android:layout_marginBottom="10dp"
+        android:hint="Nhập ghi chú" />
+
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_below="@id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text=" #"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:textSize="12dp"
+            android:textAlignment="textEnd"
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:text=" Mặt hàng "
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:text=" Diễn giải"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:text=" Giá bán"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:text=" Số lượng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <TextView
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:text=" Tổng cộng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newOrderRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sumRow"
+        android:layout_below="@id/titleLayout" />
+
+    <LinearLayout
+        android:id="@+id/sumRow"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/newProductBtn"
+            android:layout_marginRight="1dp"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_add"
+            android:text="Thêm mặt hàng"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/newOrderBtn"
+            android:layout_marginLeft="1dp"
+            android:textAllCaps="false"
+            android:drawableTint="@color/white"
+            android:drawableLeft="@drawable/calculator"
+            android:text="Chốt đơn hàng"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>

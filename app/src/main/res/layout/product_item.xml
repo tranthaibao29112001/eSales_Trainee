@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:id="@+id/productLayout">
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/order"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:text=" #"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:paddingRight="5dp"
+        android:id="@+id/invtID"
+        android:textSize="14dp"
+        android:textAlignment="textEnd"
+        android:gravity="center_vertical"
+        android:layout_weight="3"
+        android:textColor="@color/black"
+        android:text=" Mặt hàng    "
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/invtName"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="3"
+        android:text=" Diễn giải"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/price"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="3"
+        android:text=" Giá bán"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/amount"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="2"
+        android:text=" Số lượng"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/sumPrice"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_weight="3"
+        android:text=" Tổng cộng"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>
